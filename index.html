@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <img src="Logo.jpg" alt="Logo" class="logo"/>
+        <h1 class="title">Currency Converter</h1>
+      </header>
+      <main class="container">
+        <form>
+          <div class="amount">
+            <label for="amount">Enter Amount</label>
+            <input id="amount" value="1" type="text" />
+          </div>
+          <div class="dropdown">
+            <div class="from">
+              <label>From</label>
+              <div class="select-container">
+                <img />
+                <select name="from"></select>
+              </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left swap-icon"></i>
+            <div class="to">
+              <label>To</label>
+              <div class="select-container">
+                <img />
+                <select name="to"></select>
+              </div>
+            </div>
+          </div>
+          <div class="msg">Loading...</div>
+          <button type="submit">Get Exchange Rate</button>
+        </form>
+      </main>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
